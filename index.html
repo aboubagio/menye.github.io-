@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Web - Menye</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            padding: 40px 0;
+        }
+        
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .card p {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .skill-item {
+            background: #f8f9ff;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            background: #f8f9ff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .contact-item h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            padding: 20px;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .card {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Bienvenue sur mon site</h1>
+            <p>Je suis Menye - Développeur et Créateur Web</p>
+        </header>
+        
+        <div class="card">
+            <h2>À propos de moi</h2>
+            <p>Bonjour ! Je suis Menye, passionné par le développement web et les nouvelles technologies. 
+            Ce site présente mon parcours, mes compétences et mes projets.</p>
+            <p>J'aime créer des expériences web modernes et fonctionnelles qui apportent de la valeur aux utilisateurs.</p>
+        </div>
+        
+        <div class="card">
+            <h2>Mes Compétences</h2>
+            <p>Voici les technologies et domaines dans lesquels je me spécialise :</p>
+            <div class="skills">
+                <div class="skill-item">
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Design</h3>
+                    <p>UI/UX, Responsive Design</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Outils</h3>
+                    <p>GitHub, VS Code</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Mobile</h3>
+                    <p>Applications mobiles</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Mes Projets</h2>
+            <p>Ici vous trouverez une sélection de mes réalisations :</p>
+            <p><strong>🚀 Site Personnel</strong> - Ce site web créé avec GitHub Pages</p>
+            <p><strong>📱 Applications Mobile</strong> - Développement d'apps innovantes</p>
+            <p><strong>🎨 Projets Design</strong> - Interfaces utilisateur modernes</p>
+            <p><em>Plus de projets à venir bientôt...</em></p>
+        </div>
+        
+        <div class="card">
+            <h2>Me Contacter</h2>
+            <p>N'hésitez pas à me contacter pour discuter de projets ou collaborations :</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <p>menye@example.com</p>
+                </div>
+                <div class="contact-item">
+                    <h3>💼 GitHub</h3>
+                    <p>github.com/aboubagio</p>
+                </div>
+                <div class="contact-item">
+                    <h3>🌍 Localisation</h3>
+                    <p>Cameroun</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>&copy; 2025 Menye - Tous droits réservés</p>
+            <p>Créé avec ❤️ et hébergé sur GitHub Pages</p>
+        </footer>
+    </div>
+</body>
+</html>
